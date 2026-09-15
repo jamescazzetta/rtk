@@ -6096,7 +6096,7 @@ fn uninstall_vibe_at(vibe_dir: &Path, ctx: InitContext) -> Result<Vec<String>> {
 
 // ── Grok Build CLI integration ────────────────────────────────
 
-fn resolve_grok_home() -> Result<PathBuf> {
+pub(crate) fn resolve_grok_home() -> Result<PathBuf> {
     resolve_grok_home_from(std::env::var_os(GROK_HOME_ENV), dirs::home_dir())
 }
 
