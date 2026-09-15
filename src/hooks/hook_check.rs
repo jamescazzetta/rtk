@@ -25,8 +25,7 @@ pub enum HookStatus {
 
 /// Return the current hook status without printing anything.
 /// Returns `Ok` if no Claude Code is detected (not applicable), or if a
-/// Grok Build hook is installed (Grok users often have a leftover `~/.claude`
-/// from Claude-compat, which must not look like a missing hook).
+/// Grok Build hook is installed.
 pub fn status() -> HookStatus {
     if grok_rewrite_hook_exists() {
         return HookStatus::Ok;

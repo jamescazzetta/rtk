@@ -18,6 +18,6 @@ Unlike Codex, Grok applies `updatedInput` when `permissionDecision` is omitted. 
 
 Malformed JSON, non-shell tools, empty commands, heredocs, substitutions, file redirects, and commands with no RTK filter fail open: the hook exits 0 with empty stdout and Grok runs the original command.
 
-The handler uses RTK's shared hook decision pipeline through `Host::Grok`. RTK does not parse Grok permission files.
+RTK does not parse Grok permission files.
 
 Project-scoped hooks require Grok folder trust (`/hooks-trust` or `--trust`).
