@@ -471,6 +471,7 @@ mod hook_check {
             "droid",
             "vibe",
             "grok",
+            "trae",
             "opencode",
             "openclaw",
             "pi",
